@@ -75,7 +75,10 @@ export default function Home() {
           unoptimized 
         />
         <div className="text-center sm:text-left">
-          <h1 className="text-4xl font-bold mb-1">Parth Chilwerwar <MdVerified /></h1>
+          <h1 className="text-4xl font-bold mb-2 flex items-center">
+            Parth Chilwerwar
+            <MdVerified  className='text-blue-500 ml-2'/>
+          </h1>
           <p className="text-gray-400">Maharashtra, India</p>
         </div>
       </header>
