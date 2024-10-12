@@ -9,6 +9,7 @@ import { TbBrandCpp } from "react-icons/tb";
 import { MdVerified } from "react-icons/md";
 import { RiNextjsLine , RiTailwindCssLine } from 'react-icons/ri'
 import { motion } from 'framer-motion'
+import { SiGmail } from "react-icons/si";
 
 
 export default function Home() {
@@ -248,6 +249,20 @@ export default function Home() {
                 isIconOnly
               >
                 <FaGithub className="w-6 h-6" />
+              </Button>
+            </motion.div>
+            <motion.div variants={blinkVariants} >
+              <Button
+                as={Link}
+                href="mailto:job.parthchilwerwar@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                size="lg"
+                color="secondary"
+                variant="ghost"
+                isIconOnly
+              >
+                <SiGmail className="w-6 h-6" />
               </Button>
             </motion.div>
           </div>
