@@ -151,7 +151,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       size="sm"
-                      className="bg-white text-black rounded-sm" // Added styles for button
+                      className="bg-white text-black rounded-sm" 
                       variant="ghost"
                       startContent={<ExternalLink className="w-4 h-4" />}
                     >
@@ -165,7 +165,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       size="sm"
-                      className="bg-white text-black rounded-sm" // Added styles for button
+                      className="bg-white text-black rounded-sm" 
                       variant="ghost"
                       startContent={<Github className="w-4 h-4" />}
                     >
