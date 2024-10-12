@@ -75,9 +75,9 @@ export default function Home() {
           unoptimized 
         />
         <div className="text-center sm:text-left">
-          <h1 className="text-4xl font-bold mb-2 flex items-center">
+          <h1 className="text-4xl font-bold mb-2 flex items-center justify-between">
             Parth Chilwerwar
-            <MdVerified  className='text-blue-500 ml-2'/>
+            <MdVerified className='text-blue-500 ml-1 sm:ml-2 w-7 h-7 hidden sm:inline' />
           </h1>
           <p className="text-gray-400">Maharashtra, India</p>
         </div>
