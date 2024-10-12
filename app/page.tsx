@@ -135,12 +135,14 @@ export default function Home() {
                 key={index}
                 className="relative"
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 2, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
-                <div className="absolute -left-10 top-1 flex items-center justify-center w-4 h-4 rounded-full border-2 border-green-500 animate-ping">
-                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+              <div className=" absolute -left-10 top-3 flex items-center justify-center w-1.5 h-1.5 rounded-full border-2 border-green-500">
+                <div className="animate-ping w-4 h-4 rounded-full border-2 border-green-500 absolute" />
+                <div className="w-1.5 h-1.5 bg-green-500 rounded-full z-10" /> 
                 </div>
+
                 <h3 className="font-semibold text-xl mb-2">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4">{project.description}</p>
                 <div className="flex gap-4">
