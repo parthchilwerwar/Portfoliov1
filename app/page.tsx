@@ -4,10 +4,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button, Tooltip } from "@nextui-org/react"
 import { ExternalLink, Github, Linkedin as LinkedinIcon } from 'lucide-react'
-import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython} from 'react-icons/fa'
+import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt } from 'react-icons/fa'
 import { TbBrandCpp } from "react-icons/tb";
 import { MdVerified } from "react-icons/md";
 import { RiNextjsLine , RiTailwindCssLine } from 'react-icons/ri'
+
+import { GiBrainTentacle, GiBrain } from 'react-icons/gi'
+import {  SiGo } from 'react-icons/si'
 import { motion } from 'framer-motion'
 import { SiGmail } from "react-icons/si";
 
@@ -193,6 +196,11 @@ export default function Home() {
               { icon: <FaDatabase className="w-8 h-8" />, name: "Database" },
               { icon: <FaPython className="w-8 h-8" />, name: "Python" },
               { icon: <TbBrandCpp className="w-8 h-8" />, name: "C++" },
+              { icon: <FaHtml5 className="w-8 h-8" />, name: "HTML" },
+              { icon: <FaCss3Alt className="w-8 h-8" />, name: "CSS" },
+              { icon: <GiBrainTentacle className="w-8 h-8" />, name: "Generative AI" },
+              { icon: <GiBrain className="w-8 h-8" />, name: "Machine Learning" },
+              { icon: <SiGo className="w-8 h-8" />, name: "Go (basic)" },
 
             ].map((skill, index) => (
               <Tooltip key={index} content={skill.name} placement="bottom">
