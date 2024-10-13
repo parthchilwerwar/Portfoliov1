@@ -12,7 +12,7 @@ import { GiBrainTentacle, GiBrain } from 'react-icons/gi'
 import { SiTypescript , SiGo ,SiOpensourcehardware  , SiKalilinux  } from 'react-icons/si'
 import { motion } from 'framer-motion'
 import { SiGmail } from "react-icons/si";
-import HyperText from "@/components/ui/hyper-text";
+import { FaArrowTurnUp } from "react-icons/fa6";
 
 
 
@@ -202,6 +202,22 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
+            
+          <motion.div variants={blinkVariants}>
+              <Button
+                as={Link}
+                href="https://github.com/parthchilwerwar"
+                target="_blank"
+                rel="noopener noreferrer"
+                size="sm"
+                color="primary"
+                variant="ghost"
+                className='font-semibold bg-white text-black rounded-md top-3'
+              >
+
+                Show more <FaArrowTurnUp className='ml-3' />
+                </Button>
+            </motion.div>
           </div>
         </section>
         
