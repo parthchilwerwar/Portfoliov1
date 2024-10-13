@@ -2,15 +2,14 @@
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button, Tooltip } from "@nextui-org/react"
+import { Button, Tooltip ,ButtonGroup } from "@nextui-org/react"
 import { ExternalLink, Github, Linkedin as LinkedinIcon } from 'lucide-react'
 import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt } from 'react-icons/fa'
 import { TbBrandCpp } from "react-icons/tb";
 import { MdVerified } from "react-icons/md";
 import { RiNextjsLine , RiTailwindCssLine } from 'react-icons/ri'
-
 import { GiBrainTentacle, GiBrain } from 'react-icons/gi'
-import {  SiGo } from 'react-icons/si'
+import { SiTypescript , SiGo } from 'react-icons/si'
 import { motion } from 'framer-motion'
 import { SiGmail } from "react-icons/si";
 
@@ -159,7 +158,7 @@ export default function Home() {
                       size="sm"
                       className="bg-white text-black rounded-sm" 
                       variant="ghost"
-                      startContent={<ExternalLink className="w-4 h-4" />}
+                      startContent={<ExternalLink className="w-4 h-4 mr-1" />}
                     >
                       Website
                     </Button>
@@ -173,7 +172,7 @@ export default function Home() {
                       size="sm"
                       className="bg-white text-black rounded-sm" 
                       variant="ghost"
-                      startContent={<Github className="w-4 h-4" />}
+                      startContent={<Github className="w-4 h-4 mr-1" />}
                     >
                       Source
                     </Button>
@@ -191,6 +190,7 @@ export default function Home() {
               { icon: <RiNextjsLine className="w-8 h-8" />, name: "Next.js" },
               { icon: <FaReact className="w-8 h-8" />, name: "React" },
               { icon: <FaJs className="w-8 h-8" />, name: "JavaScript" },
+              { icon: <SiTypescript className="w-7 h-8" />, name: "Typescript" },
               { icon: <FaNodeJs className="w-8 h-8" />, name: "Node.js" },
               { icon: <RiTailwindCssLine className="w-8 h-8 bg-blue" />, name: "Tailwind Css" },
               { icon: <FaDatabase className="w-8 h-8" />, name: "Database" },
@@ -201,6 +201,7 @@ export default function Home() {
               { icon: <GiBrainTentacle className="w-8 h-8" />, name: "Generative AI" },
               { icon: <GiBrain className="w-8 h-8" />, name: "Machine Learning" },
               { icon: <SiGo className="w-8 h-8" />, name: "Go (basic)" },
+            
 
             ].map((skill, index) => (
               <Tooltip key={index} content={skill.name} placement="bottom">
@@ -275,9 +276,24 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+        <section >
+        <Tooltip content="Visit My Blog" placement="top">
+          <Button 
+            as={Link}
+            href="/blog"
+            color='primary'
+            size="md" 
+            variant="flat" 
+            className="font-semibold bg-white text-black rounded-md"
+            startContent={<ExternalLink className="w-4 h-4 mr-2" />}
+          >
+            Blog
+          </Button>  
+        </Tooltip>
+        </section>
       </main>
 
-      <footer className="mt-16 text-center">
+      <footer className="mt-16 text-center top-2">
         <p className="text-gray-500">
           © {new Date().getFullYear()} Parth Chilwerwar. All rights reserved.
         </p>
