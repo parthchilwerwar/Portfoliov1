@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import { Button, Tooltip ,ButtonGroup } from "@nextui-org/react"
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
+
 
 export default function Blog() {
   const handleBack = () => {
@@ -39,9 +41,14 @@ export default function Blog() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-                Coming Soon ..... 
-              </h2>
+              {/* <h2 className="text-2xl md:text-3xl font-semibold mb-4"> */}
+              {/* </h2> */}
+              <VelocityScroll
+            text="Coming Soon"
+              default_velocity={5}
+              className="font-display text-justify text-4xl font-bold tracking-[-0.02em] text-white drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
+
+            />
             </motion.div>
           </main>
         </div>

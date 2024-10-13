@@ -4,14 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button, Tooltip ,ButtonGroup } from "@nextui-org/react"
 import { ExternalLink, Github, Linkedin as LinkedinIcon } from 'lucide-react'
-import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt } from 'react-icons/fa'
+import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt ,FaGitAlt } from 'react-icons/fa'
 import { TbBrandCpp } from "react-icons/tb";
 import { MdVerified } from "react-icons/md";
 import { RiNextjsLine , RiTailwindCssLine } from 'react-icons/ri'
 import { GiBrainTentacle, GiBrain } from 'react-icons/gi'
-import { SiTypescript , SiGo } from 'react-icons/si'
+import { SiTypescript , SiGo ,SiOpensourcehardware  , SiKalilinux  } from 'react-icons/si'
 import { motion } from 'framer-motion'
 import { SiGmail } from "react-icons/si";
+import HyperText from "@/components/ui/hyper-text";
 
 
 
@@ -91,14 +92,20 @@ export default function Home() {
       <main className="space-y-16">
         <section>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Hi, I'm Parth Chilwerwar. I began coding in 2019, exploring Python and JavaScript as a curious teenager. Over the years, 
-            I've gained valuable experience in programming and web development, continually refining my skills. These early years 
-            laid the foundation for my ongoing journey in tech, and I'm excited for the growth and challenges ahead.
+          Hi, I’m Parth Chilwerwar. I started coding in 2019, diving into Python and JavaScript as 
+          a curious teenager. Since then, I’ve built solid experience in programming and web development, constantly
+           improving my skills. My passion for open-source drives me to contribute 
+          to impactful projects, and I’m eager to keep growing and embracing new challenges in the tech world.
+
           </p>
         </section>
 
         <section className=" text-white p-4 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-8">PROJECTS</h2>
+        <h2 className="text-2xl font-semibold mb-8">Featured Projects</h2>
+          {/* <HyperText
+          className="text-4xl font-semibold mb-8 dark:text-white"
+          text="Featured Projects"
+            /> */}
           <motion.svg
             className="absolute left-0 top-0 bottom-0 w-1 h-full" 
             viewBox="0 0 2 100"
@@ -130,10 +137,23 @@ export default function Home() {
                 source: 'https://github.com/parthchilwerwar/Youtube-summarizer',
               },
               {
-                title: 'FocusOn-Extension',
+                title: 'FocusOn Extension',
                 description: 'Tired of getting sucked down the rabbit hole of distracting tabs? Meet FocusOn, your new best friend for focused productivity.',
                 source: 'https://github.com/parthchilwerwar/FocusOn-Extension',
                 website: undefined, 
+              },
+              {
+                title: 'V2 Saver Extension ',
+                description:'Tired of cluttered bookmarks? V2 Saver is a Chrome extension that simplifies link saving with a single click, making it easy to organize and access your important links without the hassle.',
+                source: "https://github.com/parthchilwerwar/V2-Saver",
+                website: undefined ,
+              },
+              {
+                title: 'FOODZ',
+                description: "A versatile Discord bot built with Discord.js v14, offering features like anti-link and anti-raid security to protect your server, fun game commands to keep users entertained, and a recipe API for fetching user-based recipes. Explore the code for even more commands!",
+                source: "https://github.com/parthchilwerwar/FOODZ",
+                website: undefined,
+                
               },
             ].map((project, index) => (
               <motion.div
@@ -184,9 +204,9 @@ export default function Home() {
             ))}
           </div>
         </section>
-
+        
         <section>
-          <h2 className="text-2xl font-semibold mb-6">SKILLS</h2>
+          <h2 className="text-2xl font-semibold mb-6">Skills</h2>
           <div className="flex flex-wrap gap-6">
             {[
               { icon: <RiNextjsLine className="w-8 h-8" />, name: "Next.js" },
@@ -203,7 +223,12 @@ export default function Home() {
               { icon: <GiBrainTentacle className="w-8 h-8" />, name: "Generative AI" },
               { icon: <GiBrain className="w-8 h-8" />, name: "Machine Learning" },
               { icon: <SiGo className="w-8 h-8" />, name: "Go (basic)" },
+              { icon: <FaGitAlt className= 'w-8 h-8'/> , name: "Git"},
+              { icon: <SiOpensourcehardware className='w-9 h-9'/> , name:'Open source'},
+              { icon: <SiKalilinux className='w-8 h-8 ' /> ,name: " Kali Lunix"},
+
             
+
 
             ].map((skill, index) => (
               <Tooltip key={index} content={skill.name} placement="bottom">
@@ -216,7 +241,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-6">LANGUAGES</h2>
+          <h2 className="text-2xl font-semibold mb-6">Speaking Languages</h2>
           <div className="flex flex-wrap gap-4">
             {[
               { flag: '🇮🇳', language: 'HINDI' },
@@ -232,8 +257,9 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold  mb-6">LINKS</h2>
+          <h2 className="text-3xl font-semibold  mb-6">Links</h2>
           <div className="flex gap-4">
+          <Tooltip content="Linkedin" placement='top'>
           <motion.div variants={blinkVariants}>
               <Button
                 as={Link}
@@ -245,9 +271,13 @@ export default function Home() {
                 variant="ghost"
                 isIconOnly
               >
+
                 <FaLinkedinIn  className="w-6 h-6 " />
               </Button>
+            
             </motion.div>
+          </Tooltip >
+          <Tooltip content="Github" placement='top'>
             <motion.div variants={blinkVariants} >
               <Button
                 as={Link}
@@ -262,6 +292,8 @@ export default function Home() {
                 <FaGithub className="w-6 h-6" />
               </Button>
             </motion.div>
+            </Tooltip>
+          <Tooltip content="Gmail" placement='top'>
             <motion.div variants={blinkVariants} >
               <Button
                 as={Link}
@@ -276,6 +308,7 @@ export default function Home() {
                 <SiGmail className="w-6 h-6" />
               </Button>
             </motion.div>
+            </Tooltip>
           </div>
         </section>
         <section >
@@ -289,7 +322,7 @@ export default function Home() {
             className="font-semibold bg-white text-black rounded-md"
             startContent={<ExternalLink className="w-4 h-4 mr-2" />}
           >
-            Blog
+            Blog's
           </Button>  
         </Tooltip>
         </section>
