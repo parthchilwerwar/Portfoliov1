@@ -1,8 +1,14 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Button, Tooltip ,ButtonGroup } from "@nextui-org/react"
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 export default function Blog() {
+  const handleBack = () => {
+    window.location.href = '/'; 
+  };
+
   return (
     <div className="min-h-screen bg-black text-white p-4 md:p-8 lg:p-12 flex flex-col">
       <div className="flex-grow flex flex-col justify-center items-center">
@@ -46,6 +52,13 @@ export default function Blog() {
           © {new Date().getFullYear()} Parth Chilwerwar. All rights reserved.
         </p>
       </footer>
+
+      <Button
+        onClick={handleBack} 
+        className="absolute top-5 left-5 font-semibold bg-white text-black rounded-md size-md"
+      >
+        <IoMdArrowRoundBack className='mr-3' /> Back 
+      </Button>
     </div>
   )
 }
