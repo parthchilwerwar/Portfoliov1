@@ -14,7 +14,6 @@ import { motion } from 'framer-motion'
 import { SiGmail } from "react-icons/si";
 
 
-const [isOpen, setIsOpen] = useState(false);
 
 
 export default function Home() {
@@ -207,7 +206,7 @@ export default function Home() {
             
 
             ].map((skill, index) => (
-              <Tooltip key={index} content={skill.name} placement="bottom"  isOpen={isOpen}>
+              <Tooltip key={index} content={skill.name} placement="bottom">
                 <div className="cursor-default transition-transform hover:scale-110" >
                   {skill.icon}
                 </div>
@@ -280,7 +279,7 @@ export default function Home() {
           </div>
         </section>
         <section >
-        <Tooltip content="Visit My Blog" placement="top" isOpen={isOpen} >
+        <Tooltip content="Visit My Blog" placement="top"  >
           <Button 
             as={Link}
             href="/blog"
@@ -289,9 +288,6 @@ export default function Home() {
             variant="flat" 
             className="font-semibold bg-white text-black rounded-md"
             startContent={<ExternalLink className="w-4 h-4 mr-2" />}
-            onMouseEnter={() => setIsOpen(true)}
-            onMouseLeave={() => setIsOpen(false)}
-            onPress={() => setIsOpen(!isOpen)}
           >
             Blog
           </Button>  
