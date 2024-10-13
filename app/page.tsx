@@ -195,7 +195,7 @@ export default function Home() {
               { icon: <TbBrandCpp className="w-8 h-8" />, name: "C++" },
 
             ].map((skill, index) => (
-              <Tooltip key={index} content={skill.name} placement="bottom" delay={0} closeDelay={0}>
+              <Tooltip key={index} content={skill.name} placement="bottom">
                 <div className="cursor-default transition-transform hover:scale-110">
                   {skill.icon}
                 </div>
