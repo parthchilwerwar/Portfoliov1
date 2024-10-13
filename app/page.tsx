@@ -200,13 +200,19 @@ export default function Home() {
                     </Button>
                   )}
                 </div>
+                
               </motion.div>
             ))}
             
-          <motion.div variants={blinkVariants}>
+          <motion.div  
+          className="relative"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 2, y: 0 }}
+          transition={{ duration: 0.5 , delay: 0.9 }}
+          >
               <Button
                 as={Link}
-                href="https://github.com/parthchilwerwar"
+                href="https://github.com/parthchilwerwar?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
                 size="sm"
