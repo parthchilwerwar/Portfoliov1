@@ -242,7 +242,7 @@ export default function Home() {
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
-                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-violet-600"></span>
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-red-600"></span>
                   <span className="group-hover:underline dark:text-white">Development</span>
                 </a>
                 <span className="text-sm whitespace-nowrap text-white">2024</span>
@@ -267,7 +267,7 @@ export default function Home() {
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
-                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-violet-600"></span>
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-green-500"></span>
                   <span className="group-hover:underline dark:text-white">Founder</span>
                 </a>
                 <span className="text-sm whitespace-nowrap text-white">2019-20</span>
