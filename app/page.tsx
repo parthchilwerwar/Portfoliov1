@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button, Tooltip ,ButtonGroup   } from "@nextui-org/react"
 import { ExternalLink, Github, Linkedin as LinkedinIcon } from 'lucide-react'
-import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt ,FaGitAlt } from 'react-icons/fa'
+import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt ,FaGitAlt ,FaBug } from 'react-icons/fa'
 import { TbBrandCpp } from "react-icons/tb";
 import { MdVerified } from "react-icons/md";
 import { RiNextjsLine , RiTailwindCssLine } from 'react-icons/ri'
@@ -267,7 +267,7 @@ export default function Home() {
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
-                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-green-500"></span>
+                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-green-500 animate-blink"></span>
                   <span className="group-hover:underline dark:text-white">Founder</span>
                 </a>
                 <span className="text-sm whitespace-nowrap text-white">2019-20</span>
@@ -304,8 +304,8 @@ export default function Home() {
               { icon: <FaGitAlt className= 'w-8 h-8'/> , name: "Git"},
               { icon: <SiOpensourcehardware className='w-9 h-9'/> , name:'Open source'},
               { icon: <SiKalilinux className='w-8 h-8 ' /> ,name: " Kali Lunix"},
+              { icon: <FaBug  className='w-7 h-7  '/>,name: "Bug Bounty (basic)" },
 
-            
 
 
             ].map((skill, index) => (
