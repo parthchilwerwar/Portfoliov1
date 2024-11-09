@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button, Tooltip ,ButtonGroup } from "@nextui-org/react"
+import { Button, Tooltip ,ButtonGroup   } from "@nextui-org/react"
 import { ExternalLink, Github, Linkedin as LinkedinIcon } from 'lucide-react'
 import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt ,FaGitAlt } from 'react-icons/fa'
 import { TbBrandCpp } from "react-icons/tb";
@@ -13,9 +13,6 @@ import { SiTypescript , SiGo ,SiOpensourcehardware  , SiKalilinux  } from 'react
 import { motion } from 'framer-motion'
 import { SiGmail } from "react-icons/si";
 import { FaArrowTurnUp } from "react-icons/fa6";
-
-
-
 
 export default function Home() {
   const [blink, setBlink] = useState(true)
@@ -81,12 +78,13 @@ export default function Home() {
           unoptimized 
         />
         <div className="text-center sm:text-left">
-          <h1 className="text-4xl font-bold mb-2 flex items-center justify-between">
+        <h1 className="text-4xl font-bold mb-2 flex items-center justify-between">
             Parth Chilwerwar
             <MdVerified className='text-blue-500 ml-1 sm:ml-2 w-7 h-7 hidden sm:inline' />
           </h1>
           <p className="text-gray-400">Maharashtra, India</p>
         </div>
+       
       </header>
 
       <main className="space-y-16">
@@ -226,6 +224,64 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+        <section>
+        <h2 className="text-2xl font-semibold mb-6">Experience</h2>
+        {/* <div className="flex flex-wrap gap-6"> */}
+        <div className="max-w-3xl p-8 mx-auto  dark:text-white-800 -ml-8" >
+        <ul className="space-y-12">
+          <motion.div
+          className="relative"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 2, y: 0 }}
+          transition={{ duration: 0.5 , delay: 0.9 }}>
+
+          
+          <li className="flex items-start space-x-3">
+            
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline">Spofy</a>
+            <div className="flex-1 space-y-2">
+              <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
+                <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-violet-600"></span>
+                  <span className="group-hover:underline dark:text-white">Development</span>
+                </a>
+                <span className="text-sm whitespace-nowrap text-white">2024</span>
+              </div>
+              <div className='text-gray-400'>
+                <p>I worked extensively on a Discord bot named Spofy, where my primary 
+                  responsibilities involved implementing new features and troubleshooting bugs to enhance 
+                  its functionality and user experience. This project required a strong focus on bot logic, seamless 
+                  user interaction, and consistent updates to maintain reliability within the Discord community.</p>
+              </div>
+            </div>
+          </li>
+          </motion.div>
+          <motion.div
+          className="relative"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 2, y: 0 }}
+          transition={{ duration: 0.5 , delay: 1}}>
+          <li className="flex items-start space-x-3">
+          
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline">aplex</a>
+            <div className="flex-1 space-y-2">
+              <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
+                <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-violet-600"></span>
+                  <span className="group-hover:underline dark:text-white">Founder</span>
+                </a>
+                <span className="text-sm whitespace-nowrap text-white">2019-20</span>
+              </div>
+              <div className="space-y-2 text-gray-400" >
+                <p>As the founder of Aplex, a venture I initiated during my childhood, I have built and led the company from its inception. This experience has given me a strong foundation in innovation, leadership, and strategic vision, shaping my growth as both a developer and a founder.</p>
+              </div>
+            </div>
+          </li>
+        </motion.div>
+        </ul>
+      </div>
+        {/* </div> */}
+        </section>
         
         <section>
           <h2 className="text-2xl font-semibold mb-6">Skills</h2>
@@ -277,7 +333,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-
+            
         <section>
           <h2 className="text-3xl font-semibold  mb-6">Links</h2>
           <div className="flex gap-4">
