@@ -93,7 +93,7 @@ export default function Home() {
           Hi, I’m Parth Chilwerwar. I started coding in 2019, diving into Python and JavaScript as 
           a curious teenager. Since then, I’ve built solid experience in programming and web development, constantly
            improving my skills. My passion for open-source drives me to contribute 
-          to impactful projects, and I’m eager to keep growing and embracing new challenges in the tech world.
+          to impactful projects, and I’m eager to keep growing and embracing new challenges in the tech world .
 
           </p>
         </section>
@@ -238,11 +238,11 @@ export default function Home() {
           
           <li className="flex items-start space-x-3">
             
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline">Spofy</a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='https://media.licdn.com/dms/image/v2/D4D22AQGiHomxyinj_A/feedshare-shrink_800/feedshare-shrink_800/0/1731339369976?e=1734566400&v=beta&t=g0Rlbn4pNgcxccIzegIauzixJUv2abPt2zm7E13u7H8'  className='h-auto w-12 rounded-full object-cover'/></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
-                <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
-                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-red-600"></span>
+                <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300"> 
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-green-500"></span>
                   <span className="group-hover:underline dark:text-white">Development</span>
                 </a>
                 <span className="text-sm whitespace-nowrap text-white">2024</span>
@@ -251,7 +251,7 @@ export default function Home() {
                 <p>I worked extensively on a Discord bot named Spofy, where my primary 
                   responsibilities involved implementing new features and troubleshooting bugs to enhance 
                   its functionality and user experience. This project required a strong focus on bot logic, seamless 
-                  user interaction, and consistent updates to maintain reliability within the Discord community.</p>
+                  user interaction, and consistent updates to maintain reliability within the Discord community .</p>
               </div>
             </div>
           </li>
@@ -263,7 +263,7 @@ export default function Home() {
           transition={{ duration: 0.5 , delay: 1}}>
           <li className="flex items-start space-x-3">
           
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline">aplex</a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl "><img src='https://cdn.discordapp.com/attachments/1242921027256848548/1305946473757671544/aplex_logo1.png?ex=6734e0ee&is=67338f6e&hm=08ba75d0e6e6a06e01345654908e6cf1cd5aedd9e88d4480cd3eb6d42b60adb8&' className="h-auto w-12 rounded-full object-cover"></img></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
@@ -273,7 +273,7 @@ export default function Home() {
                 <span className="text-sm whitespace-nowrap text-white">2019-20</span>
               </div>
               <div className="space-y-2 text-gray-400" >
-                <p>As the founder of Aplex, a venture I initiated during my childhood, I have built and led the company from its inception. This experience has given me a strong foundation in innovation, leadership, and strategic vision, shaping my growth as both a developer and a founder.</p>
+                <p>As the founder of Aplex, a venture I initiated during my childhood, I have built and led the company from its inception. This experience has given me a strong foundation in innovation, leadership, and strategic vision, shaping my growth as both a developer and a founder .</p>
               </div>
             </div>
           </li>
@@ -389,7 +389,7 @@ export default function Home() {
             </Tooltip>
           </div>
         </section>
-        <section >
+        <section>
         <Tooltip content="Visit My Blog" placement="top"  >
           <Button 
             as={Link}
