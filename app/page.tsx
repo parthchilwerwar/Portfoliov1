@@ -270,7 +270,7 @@ export default function Home() {
                 <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full dark:bg-green-500 animate-blink"></span>
                   <span className="group-hover:underline dark:text-white">Founder</span>
                 </a>
-                <span className="text-sm whitespace-nowrap text-white">2019-20</span>
+                <span className="text-sm whitespace-nowrap text-white">2019-24</span>
               </div>
               <div className="space-y-2 text-gray-400" >
                 <p>As the founder of Aplex, a venture I initiated during my childhood, I have built and led the company from its inception. This experience has given me a strong foundation in innovation, leadership, and strategic vision, shaping my growth as both a developer and a founder .</p>
