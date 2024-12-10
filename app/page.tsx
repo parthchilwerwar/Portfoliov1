@@ -303,7 +303,7 @@ export default function Home() {
               { icon: <SiGo className="w-8 h-8" />, name: "Go (basic)" },
               { icon: <FaGitAlt className= 'w-8 h-8'/> , name: "Git"},
               { icon: <SiOpensourcehardware className='w-9 h-9'/> , name:'Open source'},
-              { icon: <SiKalilinux className='w-8 h-8 ' /> ,name: " Kali Lunix"},
+              { icon: <SiKalilinux className='w-8 h-8 ' /> ,name: "kali linux"},
               { icon: <FaBug  className='w-7 h-7  '/>,name: "Bug Bounty (basic)" },
 
 
@@ -337,7 +337,7 @@ export default function Home() {
         <section>
           <h2 className="text-3xl font-semibold  mb-6">Links</h2>
           <div className="flex gap-4">
-          <Tooltip content="Linkedin" placement='top'>
+          <Tooltip content="Linkedin" placement='bottom'>
           <motion.div variants={blinkVariants}>
               <Button
                 as={Link}
@@ -355,7 +355,7 @@ export default function Home() {
             
             </motion.div>
           </Tooltip >
-          <Tooltip content="Github" placement='top'>
+          <Tooltip content="Github" placement='bottom'>
             <motion.div variants={blinkVariants} >
               <Button
                 as={Link}
@@ -371,7 +371,7 @@ export default function Home() {
               </Button>
             </motion.div>
             </Tooltip>
-          <Tooltip content="Gmail" placement='top'>
+          <Tooltip content="Gmail" placement='bottom'>
             <motion.div variants={blinkVariants} >
               <Button
                 as={Link}
