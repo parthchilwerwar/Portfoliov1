@@ -70,7 +70,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white p-4 md:p-8 lg:p-12 max-w-4xl mx-auto">
       <header className="mb-12 flex flex-col sm:flex-row items-center gap-6">
         <Image
-          src="https://media.licdn.com/dms/image/v2/D4D03AQHdWL9MIss-aA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727631290476?e=1733961600&v=beta&t=y9tRzJOG8jWe0MTOEDi0At3o_9W2kKKcnbtiDakbUEs" 
+          src="https://media.licdn.com/dms/image/v2/D4D03AQHdWL9MIss-aA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727631290476?e=1739404800&v=beta&t=TRQhmFgIVOuN0WLD5slcL4Uv8OhgByofPIeTs45QKDs" 
           alt="Parth Chilwerwar"
           width={100}
           height={100}
@@ -263,7 +263,7 @@ export default function Home() {
           transition={{ duration: 0.5 , delay: 1}}>
           <li className="flex items-start space-x-3">
           
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl "><img src='https://media.discordapp.net/attachments/1242921027256848548/1305946473757671544/aplex_logo1.png?ex=6759caee&is=6758796e&hm=935fefdf05fe6b90936f1469332fd96d084f9c227ee4299e7abe12feeae116aa&=&format=webp&quality=lossless&width=437&height=437' alt='aplex' className="h-auto w-12 rounded-full object-cover"></img></a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl "><img src='https://media.discordapp.net/attachments/1242921027256848548/1305946473757671544/aplex_logo1.png?ex=675d16ae&is=675bc52e&hm=5c55f1f6bf6bd018f897d96ca3522d153f2630de7b6a458286cfdfc4acdfd90f&=&format=webp&quality=lossless&width=437&height=437' alt='aplex' className="h-auto w-12 rounded-full object-cover"></img></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
