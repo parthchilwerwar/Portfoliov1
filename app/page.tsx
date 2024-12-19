@@ -238,7 +238,7 @@ export default function Home() {
           
           <li className="flex items-start space-x-3">
             
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='https://media.licdn.com/dms/image/v2/D4D22AQGiHomxyinj_A/feedshare-shrink_800/feedshare-shrink_800/0/1731339369976?e=1734566400&v=beta&t=g0Rlbn4pNgcxccIzegIauzixJUv2abPt2zm7E13u7H8' alt='spofy'  className='h-auto w-12 rounded-full object-cover'/></a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='https://media.licdn.com/dms/image/v2/D4D22AQGiHomxyinj_A/feedshare-shrink_800/feedshare-shrink_800/0/1731339369976?e=1737590400&v=beta&t=NbsaPmIN4ebMrwyj6K_qnd3uAkR6Jwfg-zt4Q8uAO6k' alt='spofy'  className='h-auto w-12 rounded-full object-cover'/></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300"> 
@@ -263,7 +263,7 @@ export default function Home() {
           transition={{ duration: 0.5 , delay: 1}}>
           <li className="flex items-start space-x-3">
           
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl "><img src='https://media.discordapp.net/attachments/1242921027256848548/1305946473757671544/aplex_logo1.png?ex=675d16ae&is=675bc52e&hm=5c55f1f6bf6bd018f897d96ca3522d153f2630de7b6a458286cfdfc4acdfd90f&=&format=webp&quality=lossless&width=437&height=437' alt='aplex' className="h-auto w-12 rounded-full object-cover"></img></a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl "><img src='https://yt3.ggpht.com/MgmNsqhz1VfZg8IkXjNi0tsJh1aaIKxRVp1dg8wgyti1QWK0galqU3ayDJkGzFtQl3VrkVhK2A=s600-c-k-c0x00ffffff-no-rj-rp-mo' alt='aplex' className="h-auto w-12 rounded-full object-cover"></img></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300">
