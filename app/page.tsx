@@ -70,7 +70,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white p-4 md:p-8 lg:p-12 max-w-4xl mx-auto">
       <header className="mb-12 flex flex-col sm:flex-row items-center gap-6">
         <Image
-          src="/app/profileimg.jpg" 
+          src="https://media.discordapp.net/attachments/1219909349300899902/1340787355304591523/profileimg.jpg?ex=67b3a108&is=67b24f88&hm=a9ecf74ebed6ac7286bf3f6873d90a31cd1db22d067794fd9efda51c98c38cc1&=&format=webp&width=500&height=500" 
           alt="Parth Chilwerwar"
           width={100}
           height={100}
@@ -236,7 +236,7 @@ export default function Home() {
           
           <li className="flex items-start space-x-3">
             
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='/app/spofylogo.png' alt='spofy'  className='h-auto w-12 rounded-full object-cover'/></a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='https://media.discordapp.net/attachments/1219909349300899902/1340787372815810640/spofylogo.png?ex=67b3a10c&is=67b24f8c&hm=31dd7b02fa8dafa5c18123ff9dc1a0605120bc3be4eca1b58712f18b6b56274a&=&format=webp&quality=lossless&width=437&height=437' alt='spofy'  className='h-auto w-12 rounded-full object-cover'/></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300"> 
