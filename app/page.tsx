@@ -6,7 +6,7 @@ import { Button, Tooltip ,ButtonGroup   } from "@nextui-org/react"
 import { ExternalLink, Github, Linkedin as LinkedinIcon } from 'lucide-react'
 import { FaReact, FaJs, FaNodeJs, FaDatabase , FaLinkedinIn , FaGithub , FaPython , FaHtml5, FaCss3Alt ,FaGitAlt ,FaBug } from 'react-icons/fa'
 import { TbBrandCpp } from "react-icons/tb";
-import { MdVerified } from "react-icons/md";
+import { MdDescription, MdVerified } from "react-icons/md";
 import { RiNextjsLine , RiTailwindCssLine } from 'react-icons/ri'
 import { GiBrainTentacle, GiBrain } from 'react-icons/gi'
 import { SiTypescript , SiGo ,SiOpensourcehardware  , SiKalilinux  } from 'react-icons/si'
@@ -70,7 +70,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white p-4 md:p-8 lg:p-12 max-w-4xl mx-auto">
       <header className="mb-12 flex flex-col sm:flex-row items-center gap-6">
         <Image
-          src="https://media.licdn.com/dms/image/v2/D4D03AQHdWL9MIss-aA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727631290476?e=1739404800&v=beta&t=TRQhmFgIVOuN0WLD5slcL4Uv8OhgByofPIeTs45QKDs" 
+          src="/app/profileimg.jpg" 
           alt="Parth Chilwerwar"
           width={100}
           height={100}
@@ -123,6 +123,11 @@ export default function Home() {
           <div className="space-y-12 ml-8">
             {[
               {
+                title: 'TruthLens ',
+                description: 'A Deepfake Detection webapp with a landing page and AI/ML-powered integration of the Hugging Face API.',
+                source:'https://github.com/parthchilwerwar/deepfake_website'
+              },
+              {
                 title: 'Moodify',
                 description: 'Moodify is an AI-powered playlist generator that creates custom playlists based on your mood.',
                 website: 'https://moodify-ai.vercel.app/',
@@ -145,13 +150,6 @@ export default function Home() {
                 description:'Tired of cluttered bookmarks? V2 Saver is a Chrome extension that simplifies link saving with a single click, making it easy to organize and access your important links without the hassle.',
                 source: "https://github.com/parthchilwerwar/V2-Saver",
                 website: undefined ,
-              },
-              {
-                title: 'FOODZ',
-                description: "A versatile Discord bot built with Discord.js v14, offering features like anti-link and anti-raid security to protect your server, fun game commands to keep users entertained, and a recipe API for fetching user-based recipes. Explore the code for even more commands!",
-                source: "https://github.com/parthchilwerwar/FOODZ",
-                website: undefined,
-                
               },
             ].map((project, index) => (
               <motion.div
@@ -238,7 +236,7 @@ export default function Home() {
           
           <li className="flex items-start space-x-3">
             
-            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='https://media.licdn.com/dms/image/v2/D4D22AQGiHomxyinj_A/feedshare-shrink_800/feedshare-shrink_800/0/1731339369976?e=1737590400&v=beta&t=NbsaPmIN4ebMrwyj6K_qnd3uAkR6Jwfg-zt4Q8uAO6k' alt='spofy'  className='h-auto w-12 rounded-full object-cover'/></a>
+            <a rel="noopener noreferrer"  className="flex items-center h-8 text-xl hover:underline"><img src='/app/spofylogo.png' alt='spofy'  className='h-auto w-12 rounded-full object-cover'/></a>
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-4 dark:text-gray-600">
                 <a rel="noopener noreferrer"  className="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300"> 
